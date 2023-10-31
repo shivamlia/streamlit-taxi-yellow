@@ -127,7 +127,7 @@ selanjutnya mari kita liht tip yang didapat oleh taxi
 plt.figure(figsize=(15,5))
 sns.barplot(x=tip_amount['tip_amount'], y=tip_amount['count'], color='royalblue')
 ```
-
+![Alt text](image-6.png)
 
 
 
