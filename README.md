@@ -136,6 +136,7 @@ plt.figure(figsize=(15,5))
 sns.distplot(df['DOLocationID'])
 ```
 ![Alt text](image-5.png)
+Setiap taksi yang beroperasi di dalam zona taxi meter dilengkapi dengan alat meter yang terpasang di dalam kendaraan. Zona taxi meter memungkinkan taksi untuk menghitung biaya perjalanan berdasarkan parameter tertentu, seperti jarak tempuh dibutuhkan. Hal ini memastikan bahwa penumpang hanya membayar sejumlah uang yang sesuai dengan perjalanan yang mereka lakukan.
 
 ## Modeling
 
