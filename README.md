@@ -118,6 +118,7 @@ sns.barplot(x=trip_distanc['trip_distance'], y=trip_distanc['fare_amount'],color
 plt.xticks(rotation=60)
 ```
 ![Alt text](image-.png)
+
 bisa dilihat bahwa jarak perjalanan saat menggunakan taxi sangat beragam, dimana banyak orang yang menggunakan Taxi dengan jarak dekat maupun jauh.
 
 
