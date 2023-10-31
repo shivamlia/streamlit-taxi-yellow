@@ -14,7 +14,8 @@ with col1:
     DOLocationID = st.number_input('DOLocationID (Zona taxi meter dilepas)')
 
 with col2:
-    payment_type = st.number_input('payment_type (Jenis pembayaran) (1= Kartu kredit 2= Tunai 3= Tanpa biaya 4= Sengketa 5= Tidak diketahui 6= Perjalanan dibatalkan.)')
+    payment_type = st.number_input('payment_type (Jenis pembayaran) 
+    (1= Kartu kredit 2= Tunai 3= Tanpa biaya 4= Sengketa 5= Tidak diketahui 6= Perjalanan dibatalkan.)')
     fare_amount = st.number_input('fare_amount (Tarif pembayaran)')
     mta_tax = st.number_input('mta_tax (Pajak MTA)')
     tip_amount = st.number_input('tip_amount (Jumlah tip)')
