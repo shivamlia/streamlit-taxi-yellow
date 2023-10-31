@@ -106,6 +106,37 @@ sns.heatmap(df.corr(),annot=True)
 ```
 ![Alt text](image.png)
 
+Setelah itu mari kita lihat data trip distance dengan menggunakan grafik, 
+
+```jupiter
+trip_distanc = df.groupby('trip_distance').count()[['mta_tax']].sort_values(by='mta_tax',ascending=True).reset_index()
+trip_distanc = trip_distanc.rename(columns={'mta_tax':'fare_amount'})
+```
+```jupiter
+fig = plt.figure(figsize=(15,5))
+sns.barplot(x=trip_distanc['trip_distance'], y=trip_distanc['fare_amount'],color='royalblue')
+plt.xticks(rotation=60)
+```
+![Alt text](image-.png)
+bisa dilihat bahwa jarak perjalanan saat menggunakan taxi sangat beragam, dimana banyak orang yang menggunakan Taxi dengan jarak dekat maupun jauh.
+
+
+Mencari nilai distribusi PULocationID (Zona taximeter digunakan)
+```jupiter
+plt.figure(figsize=(15,5))
+sns.distplot(df['PULocationID'])
+```
+![Alt text](image-4.png)
+
+Mencari nilai distribusi DOLocationID (Zona taximeter saat dilepas)
+
+```jupiter
+plt.figure(figsize=(15,5))
+sns.distplot(df['DOLocationID'])
+```
+![Alt text](image-5.png)
+
+
 ## Modeling
 
 Selanjutnya mari kita seleksi kolom-kolom fitur yang ada di dataset dan juga untuk kita tampilkan pada web,
