@@ -37,15 +37,15 @@ Data yang digunakan yaitu Datasets yang berasal dari Kaggle dimana pada Kaggle i
 
 ### Variabel-variabel pada Heart Failure Prediction Dataset adalah sebagai berikut:
 
-- Passenger_count (Jumblah penumpang) (Number, int) = Jumlah penumpang di dalam kendaraan. Ini adalah nilai yang dimasukkan oleh pengemudi. 
-- Trip_distance ( Jarak_perjalanan) = Jarak perjalanan yang telah dilalui dalam mil yang dilaporkan oleh taksimeter.
-- PULocationID (number int) = Zona Taksi TLC di mana taksimeter digunakan.
--  DOLocationID (number int)= Zona Taksi TLC DOLocationID TLC di mana taksimeter dilepaskan.
-- Payment_type (Jenis_pembayaran) (number int) =  Kode numerik yang menandakan cara penumpang membayar perjalanan. 1= Kartu kredit 2= Tunai 3= Tanpa biaya 4= Sengketa 5= Tidak diketahui 6= Perjalanan dibatalkan.
-- Fare_amount (Tarif_jumlah) = Tarif waktu dan jarak yang dihitung oleh meteran.
-- MTA_tax  (Pajak MTA) = yang secara otomatis dipicu berdasarkan tarif meteran yang digunakan.
-- Tip_amount (Jumlah_Tip) =  Kolom ini secara otomatis diisi untuk tip kartu kredit. Tip tunai tidak termasuk.
-- Total_amount (Jumlah_Total) =  Jumlah total yang dibebankan kepada penumpang, tidak termasuk tip tunai.
+- Passenger_count (Jumblah penumpang) (Number, int64) = Jumlah penumpang di dalam kendaraan. Ini adalah nilai yang dimasukkan oleh pengemudi. 
+- Trip_distance ( Jarak_perjalanan) (float64)= Jarak perjalanan yang telah dilalui dalam mil yang dilaporkan oleh taksimeter.
+- PULocationID (number int64) = Zona Taksi TLC di mana taksimeter digunakan.
+-  DOLocationID (number int64)= Zona Taksi TLC DOLocationID TLC di mana taksimeter dilepaskan.
+- Payment_type (Jenis_pembayaran) (number int64) =  Kode numerik yang menandakan cara penumpang membayar perjalanan. 1= Kartu kredit 2= Tunai 3= Tanpa biaya 4= Sengketa 5= Tidak diketahui 6= Perjalanan dibatalkan.
+- Fare_amount (Tarif_jumlah)(float64) = Tarif waktu dan jarak yang dihitung oleh meteran.
+- MTA_tax  (Pajak MTA) (float64) = yang secara otomatis dipicu berdasarkan tarif meteran yang digunakan.
+- Tip_amount (Jumlah_Tip) (float64) =  Kolom ini secara otomatis diisi untuk tip kartu kredit. Tip tunai tidak termasuk.
+- Total_amount (Jumlah_Total) (float64)=  Jumlah total yang dibebankan kepada penumpang, tidak termasuk tip tunai.
 
 ## Data Preparation
 ### Data Collection
