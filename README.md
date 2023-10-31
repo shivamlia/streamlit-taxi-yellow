@@ -122,6 +122,14 @@ plt.xticks(rotation=60)
 
 bisa dilihat bahwa jarak perjalanan saat menggunakan taxi sangat beragam, dimana banyak orang yang menggunakan Taxi dengan jarak dekat maupun jauh.
 
+selanjutnya mari kita liht tip yang didapat oleh taxi 
+```jupiter
+plt.figure(figsize=(15,5))
+sns.barplot(x=tip_amount['tip_amount'], y=tip_amount['count'], color='royalblue')
+```
+
+
+
 
 Mencari nilai distribusi PULocationID (Zona taximeter digunakan)
 ```jupiter
