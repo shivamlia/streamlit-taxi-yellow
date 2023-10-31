@@ -97,6 +97,7 @@ selanjutnya mari kita lihat datasetnya terdapat baris yang kosong atau null deng
 sns.heatmap(df.isnull())
 ```
 ![Alt text](image-1.png)
+
 Amaannnn!!
 
 setelah itu mari kita lanjut dengan data exploration kita,
